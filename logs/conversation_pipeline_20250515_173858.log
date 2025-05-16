@@ -1,0 +1,318 @@
+2025-05-15 17:38:58,852 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-15 17:38:58,854 - __main__ - INFO - Processing file: sample_document.txt
+2025-05-15 17:38:58,855 - __main__ - INFO - Processing text file: sample_document.txt
+2025-05-15 17:38:58,855 - __main__ - INFO - Created 20 chunks from sample_document.txt
+2025-05-15 17:38:58,855 - __main__ - DEBUG - Sample chunk 1:
+2025-05-15 17:38:58,855 - __main__ - DEBUG -   ID: chunk1
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   Content preview: # Artificial Intelligence in Healthcare: A Comprehensive Overview
+
+## Introduction
+
+Artificial Intel...
+2025-05-15 17:38:58,856 - __main__ - DEBUG - Sample chunk 2:
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   ID: chunk2
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   Content preview: .
+
+## Current Applications
+
+### Diagnostic Imaging
+AI algorithms have demonstrated remarkable accura...
+2025-05-15 17:38:58,856 - __main__ - DEBUG - Sample chunk 3:
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   ID: chunk3
+2025-05-15 17:38:58,856 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-15 17:38:58,857 - __main__ - DEBUG -   Content preview: saving thousands of lives through early detection.
+The FDA has approved several AI-based diagnostic ...
+2025-05-15 17:38:58,857 - __main__ - INFO - Running conversation pipeline with 20 document chunks and 3 conversation rounds
+2025-05-15 17:38:58,857 - __main__ - DEBUG - Document chunks: [
+  {
+    "chunk_id": "chunk1",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk2",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk3",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk4",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk5",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk6",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk7",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk8",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk9",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk10",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk11",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk12",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk13",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk14",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk15",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk16",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk17",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk18",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk19",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk20",
+    "document_title": "sample_document.txt"
+  }
+]
+2025-05-15 17:38:58,857 - __main__ - DEBUG - Chunk 0 ID: chunk1, Title: sample_document.txt
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 0 content preview: # Artificial Intelligence in Healthcare: A Comprehensive Overview
+
+## Introduction
+
+Artificial Intel...
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 1 ID: chunk2, Title: sample_document.txt
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 1 content preview: .
+
+## Current Applications
+
+### Diagnostic Imaging
+AI algorithms have demonstrated remarkable accura...
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 2 ID: chunk3, Title: sample_document.txt
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 2 content preview: saving thousands of lives through early detection.
+The FDA has approved several AI-based diagnostic ...
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 3 ID: chunk4, Title: sample_document.txt
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 3 content preview: hcare institutions.
+
+### Clinical Decision Support
+AI-powered clinical decision support systems anal...
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 4 ID: chunk5, Title: sample_document.txt
+2025-05-15 17:38:58,858 - __main__ - DEBUG - Chunk 4 content preview: t records to suggest evidence-based interventions.
+For instance, IBM Watson for Oncology analyzes pa...
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 5 ID: chunk6, Title: sample_document.txt
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 5 content preview: expert recommendations.
+
+### Predictive Analytics
+Predictive models can identify patients at high ri...
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 6 ID: chunk7, Title: sample_document.txt
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 6 content preview: eadmissions, sepsis onset, or disease progression.
+A study at Stanford University demonstrated that ...
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 7 ID: chunk8, Title: sample_document.txt
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 7 content preview: tory Considerations
+
+### Data Privacy and Security
+Healthcare AI systems require access to sensitive...
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 8 ID: chunk9, Title: sample_document.txt
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 8 content preview: information, but implementation challenges remain.
+Healthcare organizations must implement robust se...
+2025-05-15 17:38:58,859 - __main__ - DEBUG - Chunk 9 ID: chunk10, Title: sample_document.txt
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 9 content preview: tions to privacy challenges.
+
+### Algorithmic Bias
+AI systems can perpetuate or amplify existing bia...
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 10 ID: chunk11, Title: sample_document.txt
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 10 content preview: orly when applied to underrepresented populations.
+Researchers and developers must ensure diverse an...
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 11 ID: chunk12, Title: sample_document.txt
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 11 content preview: trust in these systems.
+
+### Regulatory Frameworks
+Regulatory bodies worldwide are developing framew...
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 12 ID: chunk13, Title: sample_document.txt
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 12 content preview: ed medical devices, including AI/ML-based systems.
+International collaboration is needed to harmoniz...
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 13 ID: chunk14, Title: sample_document.txt
+2025-05-15 17:38:58,860 - __main__ - DEBUG - Chunk 13 content preview: .
+
+## Future Directions
+
+### Personalized Medicine
+AI will enable increasingly personalized treatmen...
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 14 ID: chunk15, Title: sample_document.txt
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 14 content preview: s tailored to individual patients' genetic makeup.
+### Remote Monitoring and Telehealth
+
+AI-powered ...
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 15 ID: chunk16, Title: sample_document.txt
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 15 content preview: care providers before acute complications develop.
+The COVID-19 pandemic accelerated telehealth adop...
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 16 ID: chunk17, Title: sample_document.txt
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 16 content preview: follow-up monitoring.
+
+### Human-AI Collaboration
+The most promising future for healthcare AI lies n...
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 17 ID: chunk18, Title: sample_document.txt
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 17 content preview: uiring human judgment, empathy, and communication.
+Training programs for healthcare professionals wi...
+2025-05-15 17:38:58,861 - __main__ - DEBUG - Chunk 18 ID: chunk19, Title: sample_document.txt
+2025-05-15 17:38:58,862 - __main__ - DEBUG - Chunk 18 content preview: ystems and interpret their outputs.
+
+## Conclusion
+Artificial intelligence holds tremendous potentia...
+2025-05-15 17:38:58,862 - __main__ - DEBUG - Chunk 19 ID: chunk20, Title: sample_document.txt
+2025-05-15 17:38:58,862 - __main__ - DEBUG - Chunk 19 content preview: cy, bias, and integration into clinical workflows.
+As AI technologies continue to evolve, collaborat...
+2025-05-15 17:38:58,862 - __main__ - INFO - Starting conversation pipeline with 3 rounds per conversation
+2025-05-15 17:38:58,890 - __main__ - INFO - Planning conversation scenarios
+2025-05-15 17:38:59,286 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-d5c62823-cd84-4eab-8c00-4d0e74c5cc7b', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at analyzing document content to identify potential conversation scenarios.\n        Your task is to:\n        \n        1. Identify the primary domain or field of the documents\n        2. Extract key topics or subjects covered in the content\n        3. Identify potential types of users who might be interested in this content\n        4. Create realistic conversation scenarios for different user personas\n        \n        Each scenario should include a specific user persona, the context of their inquiry,\n        their initial question, and their information needs.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks.</summary>\n<returns>\n<description>Dictionary with domain and topics information</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas based on document content, domain and topics.</summary>\n<returns>\n<description>List of user persona dictionaries</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain', 'type': 'string'}, 'topics': {'description': 'List of key topics', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions for each persona based on document content, domain and topics.</summary>\n<returns>\n<description>List of scenarios with initial questions</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain', 'type': 'string'}, 'topics': {'description': 'List of key topics', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user personas', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Result from scenario planning agent.', 'parameters': {'properties': {'domain': {'description': 'The primary domain identified', 'type': 'string'}, 'topics': {'description': 'Key topics identified', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'description': 'A conversation scenario.', 'properties': {'scenario_id': {'description': 'Unique identifier for the scenario', 'type': 'integer'}, 'title': {'description': 'Brief descriptive title for the scenario', 'type': 'string'}, 'persona': {'description': 'User persona for the scenario', 'anyOf': [{'$ref': '#/$defs/UserPersona'}]}, 'context': {'description': 'The specific context or situation', 'type': 'string'}, 'initial_question': {'description': 'The first question the user would ask', 'type': 'string'}, 'information_needs': {'description': 'Specific information needs', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'description': 'A user persona for a scenario.', 'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Name of the persona'}, 'type': {'description': 'Type of user', 'type': 'string'}, 'background': {'description': 'Background of the user', 'type': 'string'}, 'goals': {'description': "User's goals", 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-15 17:38:59,289 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-15 17:38:59,300 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepinfra.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-15 17:39:00,155 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f84daba1a60>
+2025-05-15 17:39:00,155 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7f84db0282d0> server_hostname='api.deepinfra.com' timeout=5.0
+2025-05-15 17:39:00,413 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f84dac9e3c0>
+2025-05-15 17:39:00,413 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-15 17:39:00,414 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-15 17:39:00,414 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-15 17:39:00,415 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-15 17:39:00,415 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-15 17:39:01,025 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 May 2025 12:09:00 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'512'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-15 17:39:01,026 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 17:39:01,027 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-15 17:39:01,027 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-15 17:39:01,027 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-15 17:39:01,027 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-15 17:39:01,028 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Thu, 15 May 2025 12:09:00 GMT', 'content-type': 'application/json', 'content-length': '512', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-15 17:39:01,028 - openai._base_client - DEBUG - request_id: None
+2025-05-15 17:39:01,040 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-79ad1e33-62b4-4ecb-8ca8-fef42bb9c93e', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at analyzing document content to identify potential conversation scenarios.\n        Your task is to:\n        \n        1. Identify the primary domain or field of the documents\n        2. Extract key topics or subjects covered in the content\n        3. Identify potential types of users who might be interested in this content\n        4. Create realistic conversation scenarios for different user personas\n        \n        Each scenario should include a specific user persona, the context of their inquiry,\n        their initial question, and their information needs.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_JDx4vqJBn9izpv6bANXJNh27', 'type': 'function', 'function': {'name': 'extract_domain_topics', 'arguments': '{}'}}]}, {'role': 'tool', 'tool_call_id': 'call_JDx4vqJBn9izpv6bANXJNh27', 'content': '{"domain":"Artificial Intelligence in Healthcare: A Comprehensive Overview","topics":["Introduction","Current Applications","Diagnostic Imaging","Current Applications","Diagnostic Imaging"],"analyzed_chunks":10,"content_sample":"# Artificial Intelligence in Healthcare: A Comprehensive Overview\\n\\n## Introduction\\n\\nArtificial Intelligence (AI) is revolutionizing healthcare delivery across the globe. From diagnostic assistance to ..."}'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks.</summary>\n<returns>\n<description>Dictionary with domain and topics information</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas based on document content, domain and topics.</summary>\n<returns>\n<description>List of user persona dictionaries</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain', 'type': 'string'}, 'topics': {'description': 'List of key topics', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions for each persona based on document content, domain and topics.</summary>\n<returns>\n<description>List of scenarios with initial questions</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain', 'type': 'string'}, 'topics': {'description': 'List of key topics', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user personas', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Result from scenario planning agent.', 'parameters': {'properties': {'domain': {'description': 'The primary domain identified', 'type': 'string'}, 'topics': {'description': 'Key topics identified', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'description': 'A conversation scenario.', 'properties': {'scenario_id': {'description': 'Unique identifier for the scenario', 'type': 'integer'}, 'title': {'description': 'Brief descriptive title for the scenario', 'type': 'string'}, 'persona': {'$ref': '#/$defs/UserPersona'}, 'context': {'description': 'The specific context or situation', 'type': 'string'}, 'initial_question': {'description': 'The first question the user would ask', 'type': 'string'}, 'information_needs': {'description': 'Specific information needs', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'description': 'A user persona for a scenario.', 'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Name of the persona'}, 'type': {'description': 'Type of user', 'type': 'string'}, 'background': {'description': 'Background of the user', 'type': 'string'}, 'goals': {'description': "User's goals", 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-15 17:39:01,042 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-15 17:39:01,043 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-15 17:39:01,043 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-15 17:39:01,043 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-15 17:39:01,044 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-15 17:39:01,044 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-15 17:39:02,424 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 May 2025 12:09:02 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'664'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-15 17:39:02,425 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 17:39:02,425 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-15 17:39:02,425 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-15 17:39:02,425 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-15 17:39:02,426 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-15 17:39:02,426 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Thu, 15 May 2025 12:09:02 GMT', 'content-type': 'application/json', 'content-length': '664', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-15 17:39:02,426 - openai._base_client - DEBUG - request_id: None
+2025-05-15 17:39:02,445 - __main__ - ERROR - Error in scenario planning: name 'topic' is not defined
+2025-05-15 17:39:02,452 - __main__ - ERROR - Traceback: Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/main.py", line 184, in run_conversation_pipeline
+    scenario_result = await scenario_planning_agent.run(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 459, in run
+    async for _ in agent_run:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 1931, in __anext__
+    next_node = await self._graph_run.__anext__()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 810, in __anext__
+    return await self.next(self._next_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 783, in next
+    self._next_node = await node.run(ctx)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 380, in run
+    async with self.stream(ctx):
+               ^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 394, in stream
+    async for _event in stream:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 443, in _run_stream
+    async for event in self._events_iterator:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 421, in _run_stream
+    async for event in self._handle_tool_calls(ctx, tool_calls):
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 472, in _handle_tool_calls
+    async for event in process_function_tools(
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 663, in process_function_tools
+    result = task.result()
+             ^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/tools.py", line 329, in run
+    return await self._run(message, run_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/tools.py", line 346, in _run
+    response_content = await function(*args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/agents/scenario_planning.py", line 243, in generate_user_personas
+    f"Understand the implications of {topic} in {domain}",
+                                      ^^^^^
+NameError: name 'topic' is not defined. Did you mean: 'topics'?
+
+2025-05-15 17:39:02,453 - __main__ - ERROR - Error in conversation pipeline: name 'topic' is not defined
+2025-05-15 17:39:02,457 - __main__ - ERROR - Traceback: Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/main.py", line 184, in run_conversation_pipeline
+    scenario_result = await scenario_planning_agent.run(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 459, in run
+    async for _ in agent_run:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 1931, in __anext__
+    next_node = await self._graph_run.__anext__()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 810, in __anext__
+    return await self.next(self._next_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 783, in next
+    self._next_node = await node.run(ctx)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 380, in run
+    async with self.stream(ctx):
+               ^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 394, in stream
+    async for _event in stream:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 443, in _run_stream
+    async for event in self._events_iterator:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 421, in _run_stream
+    async for event in self._handle_tool_calls(ctx, tool_calls):
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 472, in _handle_tool_calls
+    async for event in process_function_tools(
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 663, in process_function_tools
+    result = task.result()
+             ^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/tools.py", line 329, in run
+    return await self._run(message, run_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/tools.py", line 346, in _run
+    response_content = await function(*args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/agents/scenario_planning.py", line 243, in generate_user_personas
+    f"Understand the implications of {topic} in {domain}",
+                                      ^^^^^
+NameError: name 'topic' is not defined. Did you mean: 'topics'?
+

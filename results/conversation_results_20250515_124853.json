@@ -1,0 +1,62 @@
+{
+  "generated_questions": [
+    {
+      "question": "What are the main topics of the document?",
+      "source_chunk_id": "chunk_1",
+      "document_title": "Unknown"
+    }
+  ],
+  "generated_answers": [
+    {
+      "question": "main topics of the document",
+      "answer": "The main topics of the document include: \n1. Introduction to Artificial Intelligence (AI) in healthcare\n2. Current applications of AI in healthcare, such as: \n* Diagnostic imaging\n* Clinical decision support\n* Predictive analytics",
+      "source_chunk_ids": [
+        "chunk1",
+        "chunk2",
+        "chunk3",
+        "chunk4",
+        "chunk5"
+      ]
+    }
+  ],
+  "quality_evaluations": [
+    {
+      "factual_accuracy": 0.8,
+      "factual_accuracy_feedback": "The answer provides relevant main topics, but it is unclear if these are the only main topics in the document without access to the document chunks. The topics listed are consistent with common applications of AI in healthcare, suggesting a good understanding of the subject matter.",
+      "relevance": 0.9,
+      "relevance_feedback": "The answer directly addresses the question by providing a list of main topics related to AI in healthcare, which is the focus of the question. However, the relevance could be improved by ensuring these topics are indeed the primary focus of the document.",
+      "naturalness": 0.7,
+      "naturalness_feedback": "The answer sounds somewhat natural but is structured in a way that feels more like a list from a presentation or academic paper than a conversational response. Adding transitional phrases or explanatory sentences could enhance the natural flow.",
+      "overall_score": 0.8,
+      "overall_feedback": "The answer demonstrates a good understanding of AI applications in healthcare and is mostly relevant to the question asked. However, to achieve a higher score, it should be verified against the document for factual accuracy, and the response could be phrased in a more conversational manner.",
+      "passed": true
+    }
+  ],
+  "scenarios": {
+    "domain": "Environmental Regulations",
+    "topics": [
+      "Regulations",
+      "Compliance",
+      "Environment"
+    ],
+    "scenarios": [
+      {
+        "scenario_id": 1,
+        "title": "Compliance Inquiry",
+        "persona": {
+          "name": "Jane Doe",
+          "type": "Regulatory Compliance Officer",
+          "background": "Works for a medium-sized manufacturing company",
+          "goals": "Ensure company compliance with latest regulations"
+        },
+        "context": "Company audit",
+        "initial_question": "What are the latest environmental regulations my company needs to comply with?",
+        "information_needs": [
+          "current regulations",
+          "implementation deadlines",
+          "non-compliance penalties"
+        ]
+      }
+    ]
+  }
+}
