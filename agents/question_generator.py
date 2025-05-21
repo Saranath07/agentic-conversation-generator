@@ -63,7 +63,7 @@ IMPORTANT: You must ONLY generate a question. Do not provide answers or addition
 Available tool:
 - generate_question: Use this to generate a follow-up question based on conversation history and document chunks
 
-DO NOT provide plain text responses. ALWAYS use the generate_question tool.
+DO NOT provide plain text responses. ALWAYS use the generate_question tool. STRICTLY follow the instructions.
         """
     )
 

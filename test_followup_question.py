@@ -81,6 +81,10 @@ async def test_followup_question_flow(document_chunks=None):
     usage_limits = UsageLimits(request_limit=50)
     results = {}
 
+    output_dir = "results"
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, f"followup_test_results_{timestamp}.json")
+
     # Instantiate agents
 
     answer_generator = create_answer_generator(openai_provider)
@@ -105,6 +109,7 @@ async def test_followup_question_flow(document_chunks=None):
         logger.info(f"Generated scenario: {scenario.title}")
         print(f"\nScenario: {scenario.title}")
         print(f"Persona: {scenario.persona.name} - {scenario.persona.goals}")
+        results["scenario"] = convert_to_json_serializable(scenario_result)
         
         # Step 2: Get the initial question from the scenario
         initial_question = scenario.initial_question
@@ -125,61 +130,90 @@ async def test_followup_question_flow(document_chunks=None):
         answer = answer_run.output.answer
         source_ids = answer_run.output.source_chunk_ids
         
-        print(f"\nAnswer: {answer}")
+        print(f"\nAnswer 0: {answer}")
         print(f"Source chunks: {source_ids}")
-        
-        # Step 4: Generate follow-up question
-        logger.info("Generating follow-up question")
+
         conversation_history = [
-            {
-                "role": "user",
-                "content": initial_question
-            },
-            {
-                "role": "assistant",
-                "content": answer
-            }
-        ]
+                {
+                    "role": "user",
+                    "content": initial_question
+                },
+                {
+                    "role": "assistant",
+                    "content": answer
+                }
+            ]
+
+        for i in range(3):
         
-        # Create and run the question generator
-        question_run = await question_generator.run(
-            "Generate a follow-up question",
-            deps=QuestionGeneratorDeps(
-                conversation_history=conversation_history,
-                document_chunks=document_chunks,
-                max_chunks_to_use=3
-            ),
-            usage=usage,
-            usage_limits=usage_limits
-        )
-        
-        follow_up_question = question_run.output.question
-        related_chunks = question_run.output.related_chunk_ids
-        
-        print(f"\nFollow-up Question: {follow_up_question}")
-        print(f"Related chunks: {related_chunks}")
+            # Step 4: Generate follow-up question
+            logger.info(f"Generating follow-up question {i+1}")
+            
+            
+            # Create and run the question generator
+            question_run = await question_generator.run(
+                "Generate a follow-up question",
+                deps=QuestionGeneratorDeps(
+                    conversation_history=conversation_history,
+                    document_chunks=document_chunks,
+                    max_chunks_to_use=3
+                ),
+                usage=usage,
+                usage_limits=usage_limits
+            )
+            
+            follow_up_question = question_run.output.question
+            related_chunks = question_run.output.related_chunk_ids
+            
+            print(f"\nFollow-up Question {i+1}: {follow_up_question}")
+            print(f"Related chunks: {related_chunks}")
+
+            logger.info(f"Generating answer for: {follow_up_question}")
+            answer_run = await answer_generator.run(
+                follow_up_question,
+                deps=AnswerGeneratorDeps(
+                    question=follow_up_question,
+                    document_chunks=document_chunks,
+                    max_chunks_to_use=5
+                ),
+                usage=usage,
+                usage_limits=usage_limits
+            )
+            answer = answer_run.output.answer
+            source_ids = answer_run.output.source_chunk_ids
+
+            print(f"\nAnswer {i+1}: {answer}")
+            print(f"Source chunks: {source_ids}")
+
+            conversation_history.append(
+                {
+                    "role": "user",
+                    "content": follow_up_question
+                }
+            )
+            conversation_history.append(
+                {
+                    "role": "assistant",
+                    "content": answer
+                }
+            )
+            results["conversation_history"] = conversation_history
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(results, f)
+           
+       
         
         # Save results to a file
-        results = {
-            "scenario": scenario.model_dump(),
-            "initial_question": initial_question,
-            "answer": answer,
-            "source_chunks": source_ids,
-            "follow_up_question": follow_up_question,
-            "related_chunks": related_chunks
-        }
         
-        output_dir = "results"
-        os.makedirs(output_dir, exist_ok=True)
-        out_path = os.path.join(output_dir, f"followup_test_results_{timestamp}.json")
         
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(convert_to_json_serializable(results), f, indent=2)
+        
+        
+        
         
         logger.info(f"Results saved to: {out_path}")
         logger.info(f"Total tokens used: {usage.total_tokens}")
         
-        return results
+        return conversation_history
         
     except Exception as e:
         logger.error(f"Test error: {e}", exc_info=True)
