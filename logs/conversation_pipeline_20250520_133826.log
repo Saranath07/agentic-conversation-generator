@@ -1,0 +1,82 @@
+2025-05-20 13:38:26,500 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-20 13:38:26,502 - __main__ - INFO - Processing file: sample_document.txt
+2025-05-20 13:38:26,503 - __main__ - INFO - Created 20 chunks
+2025-05-20 13:38:26,503 - __main__ - INFO - Running pipeline on 20 chunks for 1 rounds
+2025-05-20 13:38:26,532 - __main__ - INFO - Planning conversation scenarios
+2025-05-20 13:38:26,821 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-539bba92-d136-4c78-afd1-40a84ceaed05', 'json_data': {'messages': [{'role': 'system', 'content': '\nYou are an expert at analyzing document content to identify potential conversation scenarios.\nYour task is to:\n1) Identify the primary domain of the documents.\n2) Extract key topics covered.\n3) Generate user personas.\n4) Create realistic scenarios for each persona.\nReturn a JSON strictly matching the ScenarioResult schema.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks using an LLM.</summary>\n<returns>\n<description>Dictionary with domain and topics information.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas using an LLM based on document content, domain, and topics.</summary>\n<returns>\n<description>List of user persona dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions and scenario details for each persona using an LLM.</summary>\n<returns>\n<description>List of scenario dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user persona dictionaries.', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'The final response which ends this conversation', 'parameters': {'properties': {'domain': {'description': 'Primary domain', 'type': 'string'}, 'topics': {'description': 'Key topics', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'properties': {'scenario_id': {'description': 'Unique ID', 'type': 'integer'}, 'title': {'description': 'Scenario title', 'type': 'string'}, 'persona': {'description': 'User persona', 'anyOf': [{'$ref': '#/$defs/UserPersona'}]}, 'context': {'description': 'Situation context', 'type': 'string'}, 'initial_question': {'description': 'First user question', 'type': 'string'}, 'information_needs': {'description': 'Info needs list', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Persona name'}, 'type': {'description': 'Persona role/type', 'type': 'string'}, 'background': {'description': 'Persona background', 'type': 'string'}, 'goals': {'description': 'Persona goals', 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-20 13:38:26,823 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 13:38:26,831 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepinfra.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-20 13:38:27,206 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f73c4618f20>
+2025-05-20 13:38:27,206 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7f73c5423ad0> server_hostname='api.deepinfra.com' timeout=5.0
+2025-05-20 13:38:27,472 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f73c4f31cd0>
+2025-05-20 13:38:27,473 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 13:38:27,474 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 13:38:27,474 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 13:38:27,475 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 13:38:27,475 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 13:38:27,737 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Date', b'Tue, 20 May 2025 08:08:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'59'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'www-authenticate', b'Bearer'), (b'x-robots-tag', b'noindex')])
+2025-05-20 13:38:27,738 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-05-20 13:38:27,739 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 13:38:27,739 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 13:38:27,739 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 13:38:27,740 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 13:38:27,740 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "401 Unauthorized" Headers({'date': 'Tue, 20 May 2025 08:08:27 GMT', 'content-type': 'application/json', 'content-length': '59', 'connection': 'keep-alive', 'server': 'uvicorn', 'www-authenticate': 'Bearer', 'x-robots-tag': 'noindex'})
+2025-05-20 13:38:27,740 - openai._base_client - DEBUG - request_id: None
+2025-05-20 13:38:27,741 - openai._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/openai/_base_client.py", line 1529, in request
+    response.raise_for_status()
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://api.deepinfra.com/v1/openai/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-05-20 13:38:27,742 - openai._base_client - DEBUG - Not retrying
+2025-05-20 13:38:27,743 - openai._base_client - DEBUG - Re-raising status error
+2025-05-20 13:38:27,744 - __main__ - ERROR - Pipeline error: status_code: 401, model_name: meta-llama/Llama-3.3-70B-Instruct-Turbo, body: {'detail': 'User is not authorized to access this resource'}
+Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/models/openai.py", line 271, in _completions_create
+    return await self.client.chat.completions.create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 2028, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/openai/_base_client.py", line 1742, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/openai/_base_client.py", line 1549, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'detail': 'User is not authorized to access this resource'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/main.py", line 86, in run_conversation_pipeline
+    scenario_run = await scenario_planning_agent.run(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 459, in run
+    async for _ in agent_run:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 1931, in __anext__
+    next_node = await self._graph_run.__anext__()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 810, in __anext__
+    return await self.next(self._next_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 783, in next
+    self._next_node = await node.run(ctx)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 270, in run
+    return await self._make_request(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 323, in _make_request
+    model_response = await ctx.deps.model.request(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/models/openai.py", line 197, in request
+    response = await self._completions_create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/models/openai.py", line 296, in _completions_create
+    raise ModelHTTPError(status_code=status_code, model_name=self.model_name, body=e.body) from e
+pydantic_ai.exceptions.ModelHTTPError: status_code: 401, model_name: meta-llama/Llama-3.3-70B-Instruct-Turbo, body: {'detail': 'User is not authorized to access this resource'}
+2025-05-20 13:38:27,749 - __main__ - INFO - Full results: results/conversation_results_20250520_133826.json
+2025-05-20 13:38:27,749 - __main__ - INFO - Simplified: results/simplified_20250520_133826.json
+2025-05-20 13:38:27,749 - __main__ - INFO - Total tokens used: None
+2025-05-20 13:38:27,750 - __main__ - INFO - requests: 0

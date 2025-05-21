@@ -1,0 +1,4 @@
+2025-05-20 11:56:12,987 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-20 11:56:12,989 - __main__ - INFO - Processing file: sample_document.txt
+2025-05-20 11:56:12,989 - __main__ - INFO - Created 20 chunks
+2025-05-20 11:56:12,989 - __main__ - INFO - Running pipeline on 20 chunks for 2 rounds

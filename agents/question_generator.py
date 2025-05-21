@@ -1,105 +1,174 @@
-from typing import List, Dict, Any
-from pydantic import BaseModel, Field
+import json
+from typing import List, Dict, Any, Optional
+from pydantic import BaseModel, Field, ValidationError
 
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIModel
+from pydantic_ai.messages import UserPromptPart
 
-# Define model classes for the question generator agent
+# 1) Dependencies for the question generator agent
 class QuestionGeneratorDeps(BaseModel):
-    """Dependencies for the question generator agent."""
-    document_chunks: List[Dict[str, Any]] = Field(..., description="Document chunks to generate questions from")
-    questions_per_chunk: int = Field(3, description="Number of questions to generate per chunk")
+    conversation_history: List[Dict[str, str]] = Field(
+        ..., description="Previous conversation messages with 'role' and 'content' fields"
+    )
+    document_chunks: List[Dict[str, Any]] = Field(
+        ..., description="Document chunks to use as context for generating questions"
+    )
+    max_chunks_to_use: int = Field(
+        3, description="Maximum number of chunks to use for context"
+    )
 
-class GeneratedQuestion(BaseModel):
-    """A question generated from document content."""
-    question: str = Field(..., description="The generated question")
-    source_chunk_id: str = Field(..., description="ID of the source chunk")
-    document_title: str = Field(..., description="Title of the source document")
-
+# 2) Final output schema
 class QuestionGeneratorResult(BaseModel):
-    """Result from question generator agent."""
-    questions: List[GeneratedQuestion] = Field(..., description="List of generated questions")
+    question: str = Field(..., description="The generated follow-up question")
+    related_chunk_ids: List[str] = Field(..., description="IDs of related document chunks")
 
-def create_question_generator(provider):
-    # Initialize the question generator agent
+# 3) Intermediate schema for parsing LLM JSON
+class LLMQuestionResponse(BaseModel):
+    question: str
+    related_chunk_ids: List[str]
+    reasoning: Optional[str] = None
+
+def create_question_generator(provider) -> Agent[QuestionGeneratorDeps, QuestionGeneratorResult]:
+    """
+    Creates an agent that generates relevant follow-up questions based on 
+    conversation history and document chunks.
+    
+    Args:
+        provider: The provider to use for the LLM
+        
+    Returns:
+        Configured question generator Agent
+    """
+    # Core LLM model and top-level agent
+    model = OpenAIModel("meta-llama/Llama-3.3-70B-Instruct-Turbo", provider=provider)
     question_generator = Agent(
-        OpenAIModel("meta-llama/Llama-3.3-70B-Instruct-Turbo", provider=provider),
+        model,
         deps_type=QuestionGeneratorDeps,
         output_type=QuestionGeneratorResult,
         system_prompt="""
-        You are an expert question generator that creates natural, conversational questions based on document chunks.
-        Your questions should:
-        
-        1. Be directly answerable from the provided content
-        2. Cover different aspects of the document
-        3. Sound natural and conversational, not academic or formal
-        4. Be specific enough to be answered with the information provided
-        
-        Generate diverse questions that would help users understand the key points in the documents.
+You are an expert question generator that creates relevant, insightful follow-up questions based on conversation history and document content.
+
+Your task is to:
+1. Analyze the conversation history to understand the context
+2. Examine the document chunks to identify unexplored information
+3. Generate a natural follow-up question that:
+   - Flows naturally from the previous conversation
+   - Explores new information available in the document chunks
+   - Is specific and focused (not overly broad)
+   - Encourages deeper exploration of the topic
+
+IMPORTANT: You must ONLY generate a question. Do not provide answers or additional information.
+
+Available tool:
+- generate_question: Use this to generate a follow-up question based on conversation history and document chunks
+
+DO NOT provide plain text responses. ALWAYS use the generate_question tool.
         """
     )
 
     @question_generator.tool
-    async def analyze_document_chunk(ctx: RunContext[QuestionGeneratorDeps], chunk_id: str) -> Dict[str, Any]:
+    async def generate_question(
+        ctx: RunContext[QuestionGeneratorDeps]
+    ) -> Dict[str, Any]:
         """
-        Analyze a specific document chunk to extract key topics and information.
+        Generate a follow-up question based on conversation history and document chunks.
         
         Args:
-            ctx: The run context containing document chunks
-            chunk_id: ID of the chunk to analyze
+            ctx: The run context containing conversation history and document chunks
             
         Returns:
-            Dictionary with analyzed information about the chunk
+            Dictionary with the generated question and related chunk IDs
         """
-        for chunk in ctx.deps.document_chunks:
-            if chunk.get("chunk_id") == chunk_id:
-                # In a real implementation, you might perform more sophisticated analysis
-                topics = ["Topic extracted from document"]  # Placeholder
-                return {
-                    "chunk_id": chunk_id,
-                    "content": chunk.get("content", ""),
-                    "document_title": chunk.get("document_title", "Untitled"),
-                    "key_topics": topics
-                }
+        conversation_history = ctx.deps.conversation_history
+        chunks = ctx.deps.document_chunks
+        max_chunks = ctx.deps.max_chunks_to_use
+        
+        if not chunks or not conversation_history:
+            return {
+                "question": "Could you tell me more about this topic?",
+                "related_chunk_ids": []
+            }
+        
+        # Find relevant chunks based on the conversation
+        last_user_message = ""
+        last_assistant_message = ""
+        
+        for msg in reversed(conversation_history):
+            if msg["role"] == "user" and not last_user_message:
+                last_user_message = msg["content"]
+            elif msg["role"] == "assistant" and not last_assistant_message:
+                last_assistant_message = msg["content"]
+            
+            if last_user_message and last_assistant_message:
+                break
+        
+        # Prepare context from chunks
+        context = ""
+        chunk_ids = []
+        for i, chunk in enumerate(chunks[:max_chunks]):
+            chunk_id = chunk.get("chunk_id", f"unknown-{i}")
+            content = chunk.get("content", "")
+            
+            if content:
+                context += f"\nDocument Chunk {chunk_id}:\n{content}\n"
+                chunk_ids.append(chunk_id)
+        
+        # Create conversation summary
+        conversation_summary = "\n".join([
+            f"{msg['role'].capitalize()}: {msg['content']}"
+            for msg in conversation_history[-4:]  # Use last 4 messages at most
+        ])
+        
+        prompt = f"""
+Generate a natural follow-up question based on the conversation history and document chunks below.
+
+Conversation History:
+{conversation_summary}
+
+Document Chunks:
+{context}
+
+The follow-up question should:
+1. Flow naturally from the previous conversation
+2. Explore information in the document chunks that hasn't been covered yet
+3. Be specific and focused (not overly broad)
+4. Encourage deeper exploration of the topic
+
+Return a JSON object with:
+- "question": Your generated follow-up question
+- "related_chunk_ids": Array of chunk IDs that contain information related to your question
+- "reasoning": Brief explanation of why you chose this question (optional)
+
+Example:
+{{
+  "question": "How do AI diagnostic tools compare to traditional methods in terms of accuracy?",
+  "related_chunk_ids": ["chunk2", "chunk3"],
+  "reasoning": "The conversation mentioned AI in healthcare, but hasn't explored the accuracy comparison which is covered in chunk2."
+}}
+
+Your response:
+"""
+        # Instead of using UserPromptPart, pass the prompt content directly
+        sub_agent = Agent(model)
+        sub_result = await sub_agent.run(user_prompt=prompt.strip())
+        raw = sub_result.output
+        
+        # Clean up markdown formatting if present
+        cleaned_raw = raw
+        if raw.strip().startswith("```") and raw.strip().endswith("```"):
+            # Extract content between markdown code blocks
+            cleaned_raw = "\n".join(raw.strip().split("\n")[1:-1])
+            # Remove language specifier if present
+            if cleaned_raw.startswith("json"):
+                cleaned_raw = cleaned_raw[4:].strip()
+        
+        parsed = LLMQuestionResponse.model_validate_json(cleaned_raw)
         
         return {
-            "chunk_id": chunk_id,
-            "error": "Chunk not found",
-            "content": "",
-            "document_title": "Unknown",
-            "key_topics": []
+            "question": parsed.question,
+            "related_chunk_ids": parsed.related_chunk_ids
         }
+        
 
-    @question_generator.tool
-    async def humanize_question(ctx: RunContext[QuestionGeneratorDeps], question: str) -> str:
-        """
-        Make a question sound more natural and conversational.
-        
-        Args:
-            ctx: The run context
-            question: Question to humanize
-            
-        Returns:
-            Humanized version of the question
-        """
-        # In a real implementation, this might call a separate model or API
-        # Here we'll just add a simple modification to the question
-        conversational_starters = [
-            "I was wondering, ",
-            "Could you tell me ",
-            "I'm curious about ",
-            "I'd like to know ",
-        ]
-        import random
-        starter = random.choice(conversational_starters)
-        
-        # Make sure the question ends with a question mark
-        if not question.endswith('?'):
-            question += '?'
-        
-        # Remove any existing question marks before adding the starter
-        question = question.rstrip('?')
-        
-        return f"{starter}{question.lower()}?"
-    
     return question_generator

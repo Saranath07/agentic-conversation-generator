@@ -1,0 +1,11 @@
+[
+  {
+    "scenario": "AI in Healthcare",
+    "exchanges": [
+      {
+        "question": "What are the current applications and future directions of AI in healthcare?",
+        "answer": "Artificial Intelligence (AI) is revolutionizing healthcare delivery across the globe. Current applications of AI in healthcare include diagnostic imaging, where AI algorithms can analyze medical images to detect abnormalities, and clinical decision support systems, which provide treatment recommendations and risk assessments based on patient data. AI-powered tools have been approved by the FDA for various applications, such as diabetic retinopathy detection and stroke detection. Additionally, AI is being used in predictive analytics to forecast patient outcomes and optimize treatment plans. However, the information on future directions of AI in healthcare is not available in the provided documents."
+      }
+    ]
+  }
+]

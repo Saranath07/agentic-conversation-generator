@@ -1,0 +1,13 @@
+2025-05-20 13:37:17,211 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-20 13:37:17,212 - __main__ - INFO - Starting mock answer generator test
+2025-05-20 13:37:17,212 - __main__ - INFO - Running mock answer generator with question: What is AI in healthcare?
+2025-05-20 13:37:17,212 - __main__ - INFO - Attempt 1 with response type 2
+2025-05-20 13:37:17,213 - __main__ - DEBUG - Processing response: 
+    <tool_calls>
+      <tool_call>
+        <name>generate_final_answer</name>
+        <arguments>
+ ...
+2025-05-20 13:37:17,213 - __main__ - DEBUG - Extracted JSON from pattern 1: {"question": "What is AI in healthcare?", "answer": "AI is revolutionizing healthcare delivery across the globe.", "source_chunk_ids": ["chunk1", "chunk2"]}
+2025-05-20 13:37:17,214 - __main__ - INFO - Successfully processed response
+2025-05-20 13:37:17,214 - __main__ - INFO - Test successful: {'success': True, 'question': 'What is AI in healthcare?', 'answer': 'AI is revolutionizing healthcare delivery across the globe.', 'source_chunk_ids': ['chunk1', 'chunk2']}

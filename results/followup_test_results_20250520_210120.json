@@ -1,0 +1,34 @@
+{
+  "scenario": {
+    "scenario_id": 1,
+    "title": "AI in Healthcare Imaging",
+    "persona": {
+      "name": "User 1",
+      "type": "Clinical Radiologist",
+      "background": "8 years of experience in interpreting medical images, with a strong foundation in diagnostic imaging and a keen interest in AI applications",
+      "goals": "Enhance diagnostic accuracy, streamline image analysis workflow, and leverage AI to improve patient outcomes through precise and personalized treatment plans"
+    },
+    "context": "A clinical radiologist exploring AI applications in medical imaging",
+    "initial_question": "How can AI enhance diagnostic accuracy in medical imaging?",
+    "information_needs": [
+      "AI algorithm accuracy",
+      "Implementation strategies",
+      "Clinical workflow integration",
+      "Regulatory approvals"
+    ]
+  },
+  "initial_question": "How can AI enhance diagnostic accuracy in medical imaging?",
+  "answer": "AI can enhance diagnostic accuracy in medical imaging by analyzing images with high accuracy, often matching or exceeding the performance of experienced radiologists. The FDA has approved several AI-based diagnostic tools since 2018, including IDx-DR for diabetic retinopathy detection and Viz.AI for stroke detection.",
+  "source_chunks": [
+    "chunk1",
+    "chunk2",
+    "chunk3"
+  ],
+  "follow_up_question": "What else would you like to know?",
+  "follow_up_reasoning": "An error occurred while generating the question: Expected code to be unreachable, but got: UserPromptPart(content='Generate a follow-up question based on the conversation history and document...",
+  "follow_up_sources": [
+    "chunk1",
+    "chunk2",
+    "chunk3"
+  ]
+}

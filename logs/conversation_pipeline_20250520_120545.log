@@ -1,0 +1,71 @@
+2025-05-20 12:05:45,469 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-20 12:05:45,472 - __main__ - INFO - Processing file: sample_document.txt
+2025-05-20 12:05:45,473 - __main__ - INFO - Created 20 chunks
+2025-05-20 12:05:45,474 - __main__ - INFO - Running pipeline on 20 chunks for 2 rounds
+2025-05-20 12:05:45,505 - __main__ - INFO - Planning conversation scenarios
+2025-05-20 12:05:45,874 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-ef5973df-db9e-460f-8502-6ca9002ffa62', 'json_data': {'messages': [{'role': 'system', 'content': '\nYou are an expert at analyzing document content to identify potential conversation scenarios.\nYour task is to:\n1) Identify the primary domain of the documents.\n2) Extract key topics covered.\n3) Generate user personas.\n4) Create realistic scenarios for each persona.\nReturn a JSON strictly matching the ScenarioResult schema.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks using an LLM.</summary>\n<returns>\n<description>Dictionary with domain and topics information.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas using an LLM based on document content, domain, and topics.</summary>\n<returns>\n<description>List of user persona dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions and scenario details for each persona using an LLM.</summary>\n<returns>\n<description>List of scenario dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user persona dictionaries.', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'The final response which ends this conversation', 'parameters': {'properties': {'domain': {'description': 'Primary domain', 'type': 'string'}, 'topics': {'description': 'Key topics', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'properties': {'scenario_id': {'description': 'Unique ID', 'type': 'integer'}, 'title': {'description': 'Scenario title', 'type': 'string'}, 'persona': {'description': 'User persona', 'anyOf': [{'$ref': '#/$defs/UserPersona'}]}, 'context': {'description': 'Situation context', 'type': 'string'}, 'initial_question': {'description': 'First user question', 'type': 'string'}, 'information_needs': {'description': 'Info needs list', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Persona name'}, 'type': {'description': 'Persona role/type', 'type': 'string'}, 'background': {'description': 'Persona background', 'type': 'string'}, 'goals': {'description': 'Persona goals', 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-20 12:05:45,876 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 12:05:45,885 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepinfra.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-20 12:05:46,310 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f1cb1fc4fe0>
+2025-05-20 12:05:46,311 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7f1cb2dd7850> server_hostname='api.deepinfra.com' timeout=5.0
+2025-05-20 12:05:46,580 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f1cb2970740>
+2025-05-20 12:05:46,581 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 12:05:46,582 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 12:05:46,582 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 12:05:46,583 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 12:05:46,583 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 12:05:47,205 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 06:35:47 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'499'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 12:05:47,207 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:05:47,207 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 12:05:47,208 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 12:05:47,208 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 12:05:47,208 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 12:05:47,209 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 06:35:47 GMT', 'content-type': 'application/json', 'content-length': '499', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 12:05:47,209 - openai._base_client - DEBUG - request_id: None
+2025-05-20 12:05:47,217 - __main__ - ERROR - Pipeline error: Invalid format specifier ' "Finance", "topics": ["Investment", "Banking", "Insurance", "Retirement Planning", "Tax"]' for object of type 'str'
+Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/main.py", line 83, in run_conversation_pipeline
+    scenario_run = await scenario_planning_agent.run(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 459, in run
+    async for _ in agent_run:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 1931, in __anext__
+    next_node = await self._graph_run.__anext__()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 810, in __anext__
+    return await self.next(self._next_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_graph/graph.py", line 783, in next
+    self._next_node = await node.run(ctx)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 380, in run
+    async with self.stream(ctx):
+               ^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 394, in stream
+    async for _event in stream:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 443, in _run_stream
+    async for event in self._events_iterator:
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 421, in _run_stream
+    async for event in self._handle_tool_calls(ctx, tool_calls):
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 472, in _handle_tool_calls
+    async for event in process_function_tools(
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/_agent_graph.py", line 663, in process_function_tools
+    result = task.result()
+             ^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/tools.py", line 329, in run
+    return await self._run(message, run_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/tools.py", line 346, in _run
+    response_content = await function(*args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/agents/scenario_planning.py", line 129, in extract_domain_topics
+    {"domain": "Finance", "topics": ["Investment", "Banking", "Insurance", "Retirement Planning", "Tax"]}
+ValueError: Invalid format specifier ' "Finance", "topics": ["Investment", "Banking", "Insurance", "Retirement Planning", "Tax"]' for object of type 'str'
+2025-05-20 12:05:47,224 - __main__ - INFO - Full results: results/conversation_results_20250520_120545.json
+2025-05-20 12:05:47,224 - __main__ - INFO - Simplified: results/simplified_20250520_120545.json
+2025-05-20 12:05:47,224 - __main__ - INFO - Total tokens used: 1154
+2025-05-20 12:05:47,224 - __main__ - INFO - request_tokens: 1145
+2025-05-20 12:05:47,225 - __main__ - INFO - requests: 1
+2025-05-20 12:05:47,225 - __main__ - INFO - response_tokens: 9

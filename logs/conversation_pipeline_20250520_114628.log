@@ -1,0 +1,213 @@
+2025-05-20 11:46:28,997 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-20 11:46:29,000 - __main__ - INFO - Processing file: sample_document.txt
+2025-05-20 11:46:29,000 - __main__ - INFO - Processing text file: sample_document.txt
+2025-05-20 11:46:29,001 - __main__ - INFO - Created 20 chunks from sample_document.txt
+2025-05-20 11:46:29,001 - __main__ - DEBUG - Sample chunk 1:
+2025-05-20 11:46:29,001 - __main__ - DEBUG -   ID: chunk1
+2025-05-20 11:46:29,001 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   Content preview: # Artificial Intelligence in Healthcare: A Comprehensive Overview
+
+## Introduction
+
+Artificial Intel...
+2025-05-20 11:46:29,002 - __main__ - DEBUG - Sample chunk 2:
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   ID: chunk2
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   Content preview: .
+
+## Current Applications
+
+### Diagnostic Imaging
+AI algorithms have demonstrated remarkable accura...
+2025-05-20 11:46:29,002 - __main__ - DEBUG - Sample chunk 3:
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   ID: chunk3
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-20 11:46:29,002 - __main__ - DEBUG -   Content preview: saving thousands of lives through early detection.
+The FDA has approved several AI-based diagnostic ...
+2025-05-20 11:46:29,002 - __main__ - INFO - Running conversation pipeline with 20 document chunks and 2 conversation rounds
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Document chunks: [
+  {
+    "chunk_id": "chunk1",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk2",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk3",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk4",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk5",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk6",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk7",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk8",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk9",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk10",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk11",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk12",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk13",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk14",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk15",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk16",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk17",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk18",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk19",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk20",
+    "document_title": "sample_document.txt"
+  }
+]
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Chunk 0 ID: chunk1, Title: sample_document.txt
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Chunk 0 content preview: # Artificial Intelligence in Healthcare: A Comprehensive Overview
+
+## Introduction
+
+Artificial Intel...
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Chunk 1 ID: chunk2, Title: sample_document.txt
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Chunk 1 content preview: .
+
+## Current Applications
+
+### Diagnostic Imaging
+AI algorithms have demonstrated remarkable accura...
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Chunk 2 ID: chunk3, Title: sample_document.txt
+2025-05-20 11:46:29,003 - __main__ - DEBUG - Chunk 2 content preview: saving thousands of lives through early detection.
+The FDA has approved several AI-based diagnostic ...
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 3 ID: chunk4, Title: sample_document.txt
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 3 content preview: hcare institutions.
+
+### Clinical Decision Support
+AI-powered clinical decision support systems anal...
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 4 ID: chunk5, Title: sample_document.txt
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 4 content preview: t records to suggest evidence-based interventions.
+For instance, IBM Watson for Oncology analyzes pa...
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 5 ID: chunk6, Title: sample_document.txt
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 5 content preview: expert recommendations.
+
+### Predictive Analytics
+Predictive models can identify patients at high ri...
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 6 ID: chunk7, Title: sample_document.txt
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 6 content preview: eadmissions, sepsis onset, or disease progression.
+A study at Stanford University demonstrated that ...
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 7 ID: chunk8, Title: sample_document.txt
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 7 content preview: tory Considerations
+
+### Data Privacy and Security
+Healthcare AI systems require access to sensitive...
+2025-05-20 11:46:29,004 - __main__ - DEBUG - Chunk 8 ID: chunk9, Title: sample_document.txt
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 8 content preview: information, but implementation challenges remain.
+Healthcare organizations must implement robust se...
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 9 ID: chunk10, Title: sample_document.txt
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 9 content preview: tions to privacy challenges.
+
+### Algorithmic Bias
+AI systems can perpetuate or amplify existing bia...
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 10 ID: chunk11, Title: sample_document.txt
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 10 content preview: orly when applied to underrepresented populations.
+Researchers and developers must ensure diverse an...
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 11 ID: chunk12, Title: sample_document.txt
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 11 content preview: trust in these systems.
+
+### Regulatory Frameworks
+Regulatory bodies worldwide are developing framew...
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 12 ID: chunk13, Title: sample_document.txt
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 12 content preview: ed medical devices, including AI/ML-based systems.
+International collaboration is needed to harmoniz...
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 13 ID: chunk14, Title: sample_document.txt
+2025-05-20 11:46:29,005 - __main__ - DEBUG - Chunk 13 content preview: .
+
+## Future Directions
+
+### Personalized Medicine
+AI will enable increasingly personalized treatmen...
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 14 ID: chunk15, Title: sample_document.txt
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 14 content preview: s tailored to individual patients' genetic makeup.
+### Remote Monitoring and Telehealth
+
+AI-powered ...
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 15 ID: chunk16, Title: sample_document.txt
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 15 content preview: care providers before acute complications develop.
+The COVID-19 pandemic accelerated telehealth adop...
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 16 ID: chunk17, Title: sample_document.txt
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 16 content preview: follow-up monitoring.
+
+### Human-AI Collaboration
+The most promising future for healthcare AI lies n...
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 17 ID: chunk18, Title: sample_document.txt
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 17 content preview: uiring human judgment, empathy, and communication.
+Training programs for healthcare professionals wi...
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 18 ID: chunk19, Title: sample_document.txt
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 18 content preview: ystems and interpret their outputs.
+
+## Conclusion
+Artificial intelligence holds tremendous potentia...
+2025-05-20 11:46:29,006 - __main__ - DEBUG - Chunk 19 ID: chunk20, Title: sample_document.txt
+2025-05-20 11:46:29,007 - __main__ - DEBUG - Chunk 19 content preview: cy, bias, and integration into clinical workflows.
+As AI technologies continue to evolve, collaborat...
+2025-05-20 11:46:29,007 - __main__ - INFO - Starting conversation pipeline with 2 rounds per conversation
+2025-05-20 11:46:29,036 - __main__ - ERROR - Error in conversation pipeline: 'OpenAIProvider' object has no attribute 'split'
+2025-05-20 11:46:29,040 - __main__ - ERROR - Traceback: Traceback (most recent call last):
+  File "/home/saranathp/agentic-conversation-generator/main.py", line 108, in run_conversation_pipeline
+    scenario_planning_agent = create_scenario_planning_agent(openai_provider)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/agents/scenario_planning.py", line 76, in create_scenario_planning_agent
+    agent = Agent(
+            ^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/agent.py", line 274, in __init__
+    self.model = models.infer_model(model)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saranathp/agentic-conversation-generator/.venv/lib64/python3.12/site-packages/pydantic_ai/models/__init__.py", line 437, in infer_model
+    provider, model_name = model.split(':', maxsplit=1)
+                           ^^^^^^^^^^^
+AttributeError: 'OpenAIProvider' object has no attribute 'split'
+

@@ -29,6 +29,7 @@ def create_quality_controller(provider):
         OpenAIModel("meta-llama/Llama-3.3-70B-Instruct-Turbo", provider=provider),
         deps_type=QualityControlDeps,
         output_type=EvaluationResult,
+        max_result_retries=1,  # Minimize retries to reduce API calls
         system_prompt="""
         You are a quality control expert evaluating answers to questions.
         Assess the conversation for:
@@ -38,6 +39,22 @@ def create_quality_controller(provider):
         3. Natural conversational flow: Does the conversation sound natural and human-like?
         
         Provide detailed feedback and scores for each criterion, as well as an overall assessment.
+        
+        IMPORTANT: To minimize API calls, DO NOT use the 'verify_factual_statement' tool.
+        Instead, directly evaluate the answer based on the provided source chunks.
+        
+        ALWAYS use the 'final_result' tool to provide your evaluation results with the following parameters:
+          * factual_accuracy: Score from 0 to 1
+          * factual_accuracy_feedback: Brief feedback on factual accuracy
+          * relevance: Score from 0 to 1
+          * relevance_feedback: Brief feedback on relevance
+          * naturalness: Score from 0 to 1
+          * naturalness_feedback: Brief feedback on naturalness
+          * overall_score: Overall quality score from 0 to 1
+          * overall_feedback: Brief overall assessment
+          * passed: Boolean indicating whether the answer passes quality control
+        
+        DO NOT provide plain text responses. ALWAYS use the final_result tool for your evaluation.
         """
     )
 
@@ -53,7 +70,7 @@ def create_quality_controller(provider):
         Returns:
             Verification result with score and explanation
         """
-        # In a real implementation, this would perform sophisticated verification
+
         # Here we'll use a simple heuristic based on word matching
         statement_words = set(statement.lower().split())
         found_evidence = False

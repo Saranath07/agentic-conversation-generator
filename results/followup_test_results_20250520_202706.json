@@ -1,0 +1,20 @@
+{
+  "scenario": {
+    "scenario_id": 1,
+    "title": "Artificial Intelligence in Healthcare",
+    "persona": {
+      "name": "User 1",
+      "type": "Clinical Data Analyst",
+      "background": "5 years experience in healthcare data analysis and privacy compliance",
+      "goals": "Leverage AI and predictive analytics to improve patient outcomes while ensuring data privacy and compliance with regulatory requirements"
+    },
+    "context": "A clinical data analyst seeking to leverage AI and predictive analytics to improve patient outcomes while ensuring data privacy and compliance",
+    "initial_question": "What are the current applications and challenges of AI in healthcare?",
+    "information_needs": [
+      "Diagnostic imaging capabilities",
+      "Predictive analytics for personalized treatment",
+      "Data privacy and regulatory compliance"
+    ]
+  },
+  "initial_question": "What are the current applications and challenges of AI in healthcare?"
+}

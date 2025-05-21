@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Agentic Conversation Generator is an advanced system I've developed that creates realistic, multi-turn conversations based on document content. It leverages multiple specialized AI agents working together to generate natural-sounding questions and answers that reflect the information contained in provided documents. The system uses Pydantic AI to create structured, type-safe agents that collaborate effectively in a pipeline architecture.
+The Agentic Conversation Generator is a system that creates realistic, multi-turn conversations based on document content. It leverages multiple specialized AI agents working together to generate natural-sounding questions and answers that reflect the information contained in provided documents. The system uses Pydantic AI to create structured, type-safe agents that collaborate effectively in a pipeline architecture.
 
 This project demonstrates how multiple AI agents can work together to perform complex tasks that require different specialized capabilities, creating human-like conversations that explore document content in a natural way.
 
@@ -181,5 +181,4 @@ The system generates two types of output files:
 2. **Simplified Conversations** (`simplified_conversations_[timestamp].json`):
    - Just the question-answer pairs organized by scenario
    - Easier to read and use for demonstration purposes
-
 

@@ -1,0 +1,11 @@
+[
+  {
+    "scenario": "Artificial Intelligence in Healthcare",
+    "exchanges": [
+      {
+        "question": "What are the current applications and challenges of AI in healthcare?",
+        "answer": "The current applications of AI in healthcare include diagnostic imaging, where AI algorithms can analyze medical images to detect abnormalities, and clinical decision support systems, which provide treatment recommendations and risk assessments. Additionally, AI is being used in predictive analytics to identify high-risk patients and prevent hospital readmissions. However, challenges such as data quality, interoperability, and regulatory frameworks need to be addressed to fully realize the potential of AI in healthcare."
+      }
+    ]
+  }
+]

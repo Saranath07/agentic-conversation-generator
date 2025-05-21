@@ -1,0 +1,333 @@
+2025-05-20 09:38:20,604 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-20 09:38:20,606 - __main__ - INFO - Processing file: sample_document.txt
+2025-05-20 09:38:20,606 - __main__ - INFO - Processing text file: sample_document.txt
+2025-05-20 09:38:20,607 - __main__ - INFO - Created 20 chunks from sample_document.txt
+2025-05-20 09:38:20,607 - __main__ - DEBUG - Sample chunk 1:
+2025-05-20 09:38:20,607 - __main__ - DEBUG -   ID: chunk1
+2025-05-20 09:38:20,607 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-20 09:38:20,607 - __main__ - DEBUG -   Content preview: # Artificial Intelligence in Healthcare: A Comprehensive Overview
+
+## Introduction
+
+Artificial Intel...
+2025-05-20 09:38:20,607 - __main__ - DEBUG - Sample chunk 2:
+2025-05-20 09:38:20,608 - __main__ - DEBUG -   ID: chunk2
+2025-05-20 09:38:20,608 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-20 09:38:20,608 - __main__ - DEBUG -   Content preview: .
+
+## Current Applications
+
+### Diagnostic Imaging
+AI algorithms have demonstrated remarkable accura...
+2025-05-20 09:38:20,608 - __main__ - DEBUG - Sample chunk 3:
+2025-05-20 09:38:20,608 - __main__ - DEBUG -   ID: chunk3
+2025-05-20 09:38:20,608 - __main__ - DEBUG -   Title: sample_document.txt
+2025-05-20 09:38:20,608 - __main__ - DEBUG -   Content preview: saving thousands of lives through early detection.
+The FDA has approved several AI-based diagnostic ...
+2025-05-20 09:38:20,608 - __main__ - INFO - Running conversation pipeline with 20 document chunks and 1 conversation rounds
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Document chunks: [
+  {
+    "chunk_id": "chunk1",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk2",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk3",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk4",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk5",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk6",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk7",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk8",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk9",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk10",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk11",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk12",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk13",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk14",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk15",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk16",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk17",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk18",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk19",
+    "document_title": "sample_document.txt"
+  },
+  {
+    "chunk_id": "chunk20",
+    "document_title": "sample_document.txt"
+  }
+]
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Chunk 0 ID: chunk1, Title: sample_document.txt
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Chunk 0 content preview: # Artificial Intelligence in Healthcare: A Comprehensive Overview
+
+## Introduction
+
+Artificial Intel...
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Chunk 1 ID: chunk2, Title: sample_document.txt
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Chunk 1 content preview: .
+
+## Current Applications
+
+### Diagnostic Imaging
+AI algorithms have demonstrated remarkable accura...
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Chunk 2 ID: chunk3, Title: sample_document.txt
+2025-05-20 09:38:20,609 - __main__ - DEBUG - Chunk 2 content preview: saving thousands of lives through early detection.
+The FDA has approved several AI-based diagnostic ...
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 3 ID: chunk4, Title: sample_document.txt
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 3 content preview: hcare institutions.
+
+### Clinical Decision Support
+AI-powered clinical decision support systems anal...
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 4 ID: chunk5, Title: sample_document.txt
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 4 content preview: t records to suggest evidence-based interventions.
+For instance, IBM Watson for Oncology analyzes pa...
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 5 ID: chunk6, Title: sample_document.txt
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 5 content preview: expert recommendations.
+
+### Predictive Analytics
+Predictive models can identify patients at high ri...
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 6 ID: chunk7, Title: sample_document.txt
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 6 content preview: eadmissions, sepsis onset, or disease progression.
+A study at Stanford University demonstrated that ...
+2025-05-20 09:38:20,610 - __main__ - DEBUG - Chunk 7 ID: chunk8, Title: sample_document.txt
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 7 content preview: tory Considerations
+
+### Data Privacy and Security
+Healthcare AI systems require access to sensitive...
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 8 ID: chunk9, Title: sample_document.txt
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 8 content preview: information, but implementation challenges remain.
+Healthcare organizations must implement robust se...
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 9 ID: chunk10, Title: sample_document.txt
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 9 content preview: tions to privacy challenges.
+
+### Algorithmic Bias
+AI systems can perpetuate or amplify existing bia...
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 10 ID: chunk11, Title: sample_document.txt
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 10 content preview: orly when applied to underrepresented populations.
+Researchers and developers must ensure diverse an...
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 11 ID: chunk12, Title: sample_document.txt
+2025-05-20 09:38:20,611 - __main__ - DEBUG - Chunk 11 content preview: trust in these systems.
+
+### Regulatory Frameworks
+Regulatory bodies worldwide are developing framew...
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 12 ID: chunk13, Title: sample_document.txt
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 12 content preview: ed medical devices, including AI/ML-based systems.
+International collaboration is needed to harmoniz...
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 13 ID: chunk14, Title: sample_document.txt
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 13 content preview: .
+
+## Future Directions
+
+### Personalized Medicine
+AI will enable increasingly personalized treatmen...
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 14 ID: chunk15, Title: sample_document.txt
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 14 content preview: s tailored to individual patients' genetic makeup.
+### Remote Monitoring and Telehealth
+
+AI-powered ...
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 15 ID: chunk16, Title: sample_document.txt
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 15 content preview: care providers before acute complications develop.
+The COVID-19 pandemic accelerated telehealth adop...
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 16 ID: chunk17, Title: sample_document.txt
+2025-05-20 09:38:20,612 - __main__ - DEBUG - Chunk 16 content preview: follow-up monitoring.
+
+### Human-AI Collaboration
+The most promising future for healthcare AI lies n...
+2025-05-20 09:38:20,613 - __main__ - DEBUG - Chunk 17 ID: chunk18, Title: sample_document.txt
+2025-05-20 09:38:20,613 - __main__ - DEBUG - Chunk 17 content preview: uiring human judgment, empathy, and communication.
+Training programs for healthcare professionals wi...
+2025-05-20 09:38:20,613 - __main__ - DEBUG - Chunk 18 ID: chunk19, Title: sample_document.txt
+2025-05-20 09:38:20,613 - __main__ - DEBUG - Chunk 18 content preview: ystems and interpret their outputs.
+
+## Conclusion
+Artificial intelligence holds tremendous potentia...
+2025-05-20 09:38:20,613 - __main__ - DEBUG - Chunk 19 ID: chunk20, Title: sample_document.txt
+2025-05-20 09:38:20,613 - __main__ - DEBUG - Chunk 19 content preview: cy, bias, and integration into clinical workflows.
+As AI technologies continue to evolve, collaborat...
+2025-05-20 09:38:20,613 - __main__ - INFO - Starting conversation pipeline with 1 rounds per conversation
+2025-05-20 09:38:20,645 - __main__ - INFO - Planning conversation scenarios
+2025-05-20 09:38:20,966 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-4ef8ac0f-b630-4490-8bda-ab5efab0d738', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at analyzing document content to identify potential conversation scenarios.\n        Your task is to:\n        \n        1. Identify the primary domain or field of the documents using the extract_domain_topics tool.\n        2. Extract key topics or subjects covered in the content using the extract_domain_topics tool.\n        3. Generate potential user personas based on the identified domain and topics using the generate_user_personas tool.\n        4. Create realistic conversation scenarios for these personas, including initial questions and information needs, using the generate_initial_questions tool.\n        \n        Compile these into a ScenarioResult. Ensure the final output strictly adheres to the ScenarioResult schema.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks using an LLM.</summary>\n<returns>\n<description>Dictionary with domain and topics information.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas using an LLM based on document content, domain, and topics.</summary>\n<returns>\n<description>List of user persona dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions and scenario details for each persona using an LLM.</summary>\n<returns>\n<description>List of scenario dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user persona dictionaries.', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Result from scenario planning agent.', 'parameters': {'properties': {'domain': {'description': 'The primary domain identified', 'type': 'string'}, 'topics': {'description': 'Key topics identified', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'description': 'A conversation scenario.', 'properties': {'scenario_id': {'description': 'Unique identifier for the scenario', 'type': 'integer'}, 'title': {'description': 'Brief descriptive title for the scenario', 'type': 'string'}, 'persona': {'description': 'User persona for the scenario', 'anyOf': [{'$ref': '#/$defs/UserPersona'}]}, 'context': {'description': 'The specific context or situation', 'type': 'string'}, 'initial_question': {'description': 'The first question the user would ask', 'type': 'string'}, 'information_needs': {'description': 'Specific information needs', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'description': 'A user persona for a scenario.', 'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Name of the persona'}, 'type': {'description': 'Type of user', 'type': 'string'}, 'background': {'description': 'Background of the user', 'type': 'string'}, 'goals': {'description': "User's goals", 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-20 09:38:20,968 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:20,977 - httpcore.connection - DEBUG - connect_tcp.started host='api.deepinfra.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-05-20 09:38:21,405 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f96506c3800>
+2025-05-20 09:38:21,405 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7f9650bf6150> server_hostname='api.deepinfra.com' timeout=5.0
+2025-05-20 09:38:21,668 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f96508c1d00>
+2025-05-20 09:38:21,668 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:21,669 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:21,669 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:21,670 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:21,670 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:22,370 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:22 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'501'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:22,371 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:22,372 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:22,372 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:22,372 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:22,372 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:22,373 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:22 GMT', 'content-type': 'application/json', 'content-length': '501', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:22,373 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:22,383 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-229e699a-2e22-45c1-9a2e-693ed47d094a', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at analyzing document content to identify potential conversation scenarios.\n        Your task is to:\n        \n        1. Identify the primary domain or field of the documents using the extract_domain_topics tool.\n        2. Extract key topics or subjects covered in the content using the extract_domain_topics tool.\n        3. Generate potential user personas based on the identified domain and topics using the generate_user_personas tool.\n        4. Create realistic conversation scenarios for these personas, including initial questions and information needs, using the generate_initial_questions tool.\n        \n        Compile these into a ScenarioResult. Ensure the final output strictly adheres to the ScenarioResult schema.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_bnm9Mbs1sIZV61VSu09VDr22', 'type': 'function', 'function': {'name': 'extract_domain_topics', 'arguments': '{}'}}]}, {'role': 'tool', 'tool_call_id': 'call_bnm9Mbs1sIZV61VSu09VDr22', 'content': '{"domain":"Error","topics":[],"error":"LLM call failed: \'RunContext\' object has no attribute \'agent\'"}'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks using an LLM.</summary>\n<returns>\n<description>Dictionary with domain and topics information.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas using an LLM based on document content, domain, and topics.</summary>\n<returns>\n<description>List of user persona dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions and scenario details for each persona using an LLM.</summary>\n<returns>\n<description>List of scenario dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user persona dictionaries.', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Result from scenario planning agent.', 'parameters': {'properties': {'domain': {'description': 'The primary domain identified', 'type': 'string'}, 'topics': {'description': 'Key topics identified', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'description': 'A conversation scenario.', 'properties': {'scenario_id': {'description': 'Unique identifier for the scenario', 'type': 'integer'}, 'title': {'description': 'Brief descriptive title for the scenario', 'type': 'string'}, 'persona': {'$ref': '#/$defs/UserPersona'}, 'context': {'description': 'The specific context or situation', 'type': 'string'}, 'initial_question': {'description': 'The first question the user would ask', 'type': 'string'}, 'information_needs': {'description': 'Specific information needs', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'description': 'A user persona for a scenario.', 'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Name of the persona'}, 'type': {'description': 'Type of user', 'type': 'string'}, 'background': {'description': 'Background of the user', 'type': 'string'}, 'goals': {'description': "User's goals", 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-20 09:38:22,385 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:22,386 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:22,387 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:22,387 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:22,388 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:22,388 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:23,496 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:23 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'592'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:23,496 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:23,497 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:23,497 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:23,498 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:23,498 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:23,498 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:23 GMT', 'content-type': 'application/json', 'content-length': '592', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:23,499 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:23,506 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-fe4d9c53-6e56-4547-999f-a9a988aa22e7', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at analyzing document content to identify potential conversation scenarios.\n        Your task is to:\n        \n        1. Identify the primary domain or field of the documents using the extract_domain_topics tool.\n        2. Extract key topics or subjects covered in the content using the extract_domain_topics tool.\n        3. Generate potential user personas based on the identified domain and topics using the generate_user_personas tool.\n        4. Create realistic conversation scenarios for these personas, including initial questions and information needs, using the generate_initial_questions tool.\n        \n        Compile these into a ScenarioResult. Ensure the final output strictly adheres to the ScenarioResult schema.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_bnm9Mbs1sIZV61VSu09VDr22', 'type': 'function', 'function': {'name': 'extract_domain_topics', 'arguments': '{}'}}]}, {'role': 'tool', 'tool_call_id': 'call_bnm9Mbs1sIZV61VSu09VDr22', 'content': '{"domain":"Error","topics":[],"error":"LLM call failed: \'RunContext\' object has no attribute \'agent\'"}'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_Hq7aF3GxVZJtZhxtRA5EXpEd', 'type': 'function', 'function': {'name': 'generate_user_personas', 'arguments': '{"domain": "Technology", "topics": ["Artificial Intelligence", "Machine Learning"]}'}}]}, {'role': 'tool', 'tool_call_id': 'call_Hq7aF3GxVZJtZhxtRA5EXpEd', 'content': '[{"name":"ErrorUser 1","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"},{"name":"ErrorUser 2","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"},{"name":"ErrorUser 3","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"},{"name":"ErrorUser 4","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"}]'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks using an LLM.</summary>\n<returns>\n<description>Dictionary with domain and topics information.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas using an LLM based on document content, domain, and topics.</summary>\n<returns>\n<description>List of user persona dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions and scenario details for each persona using an LLM.</summary>\n<returns>\n<description>List of scenario dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user persona dictionaries.', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Result from scenario planning agent.', 'parameters': {'properties': {'domain': {'description': 'The primary domain identified', 'type': 'string'}, 'topics': {'description': 'Key topics identified', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'description': 'A conversation scenario.', 'properties': {'scenario_id': {'description': 'Unique identifier for the scenario', 'type': 'integer'}, 'title': {'description': 'Brief descriptive title for the scenario', 'type': 'string'}, 'persona': {'$ref': '#/$defs/UserPersona'}, 'context': {'description': 'The specific context or situation', 'type': 'string'}, 'initial_question': {'description': 'The first question the user would ask', 'type': 'string'}, 'information_needs': {'description': 'Specific information needs', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'description': 'A user persona for a scenario.', 'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Name of the persona'}, 'type': {'description': 'Type of user', 'type': 'string'}, 'background': {'description': 'Background of the user', 'type': 'string'}, 'goals': {'description': "User's goals", 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-20 09:38:23,508 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:23,509 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:23,510 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:23,511 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:23,511 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:23,511 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:25,953 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:25 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'767'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:25,954 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:25,954 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:25,954 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:25,955 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:25,955 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:25,955 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:25 GMT', 'content-type': 'application/json', 'content-length': '767', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:25,955 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:25,962 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-958a3b32-f935-41c8-9ec4-75d37e7fe4de', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at analyzing document content to identify potential conversation scenarios.\n        Your task is to:\n        \n        1. Identify the primary domain or field of the documents using the extract_domain_topics tool.\n        2. Extract key topics or subjects covered in the content using the extract_domain_topics tool.\n        3. Generate potential user personas based on the identified domain and topics using the generate_user_personas tool.\n        4. Create realistic conversation scenarios for these personas, including initial questions and information needs, using the generate_initial_questions tool.\n        \n        Compile these into a ScenarioResult. Ensure the final output strictly adheres to the ScenarioResult schema.\n        '}, {'role': 'user', 'content': 'Analyze documents and identify potential conversation scenarios'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_bnm9Mbs1sIZV61VSu09VDr22', 'type': 'function', 'function': {'name': 'extract_domain_topics', 'arguments': '{}'}}]}, {'role': 'tool', 'tool_call_id': 'call_bnm9Mbs1sIZV61VSu09VDr22', 'content': '{"domain":"Error","topics":[],"error":"LLM call failed: \'RunContext\' object has no attribute \'agent\'"}'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_Hq7aF3GxVZJtZhxtRA5EXpEd', 'type': 'function', 'function': {'name': 'generate_user_personas', 'arguments': '{"domain": "Technology", "topics": ["Artificial Intelligence", "Machine Learning"]}'}}]}, {'role': 'tool', 'tool_call_id': 'call_Hq7aF3GxVZJtZhxtRA5EXpEd', 'content': '[{"name":"ErrorUser 1","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"},{"name":"ErrorUser 2","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"},{"name":"ErrorUser 3","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"},{"name":"ErrorUser 4","type":"Error","background":"LLM Call Error","goals":"\'RunContext\' object has no attribute \'agent\'"}]'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_ZqiRDcD263bXEg9P7BKSk0kM', 'type': 'function', 'function': {'name': 'generate_initial_questions', 'arguments': '{"domain": "Technology", "topics": ["Artificial Intelligence", "Machine Learning"], "personas": [{"name": "Tech Enthusiast", "type": "Developer", "background": "Background in computer science", "goals": "Interacting with AI models"}]}'}}]}, {'role': 'tool', 'tool_call_id': 'call_ZqiRDcD263bXEg9P7BKSk0kM', 'content': '[{"scenario_id":1,"title":"LLM Error for Scenario Tech Enthusiast","persona":{"name":"Tech Enthusiast","type":"Developer","background":"Background in computer science","goals":"Interacting with AI models"},"context":"LLM call failed: \'RunContext\' object has no attribute \'agent\'","initial_question":"N/A","information_needs":[]}]'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'extract_domain_topics', 'description': '<summary>Extract the primary domain and key topics from document chunks using an LLM.</summary>\n<returns>\n<description>Dictionary with domain and topics information.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {}, 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_user_personas', 'description': '<summary>Generate potential user personas using an LLM based on document content, domain, and topics.</summary>\n<returns>\n<description>List of user persona dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['domain', 'topics'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'generate_initial_questions', 'description': '<summary>Generate initial questions and scenario details for each persona using an LLM.</summary>\n<returns>\n<description>List of scenario dictionaries.</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'domain': {'description': 'The identified domain.', 'type': 'string'}, 'topics': {'description': 'List of key topics.', 'items': {'type': 'string'}, 'type': 'array'}, 'personas': {'description': 'List of user persona dictionaries.', 'items': {'additionalProperties': True, 'type': 'object'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'personas'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Result from scenario planning agent.', 'parameters': {'properties': {'domain': {'description': 'The primary domain identified', 'type': 'string'}, 'topics': {'description': 'Key topics identified', 'items': {'type': 'string'}, 'type': 'array'}, 'scenarios': {'description': 'Generated scenarios', 'items': {'$ref': '#/$defs/Scenario'}, 'type': 'array'}}, 'required': ['domain', 'topics', 'scenarios'], 'type': 'object', '$defs': {'Scenario': {'description': 'A conversation scenario.', 'properties': {'scenario_id': {'description': 'Unique identifier for the scenario', 'type': 'integer'}, 'title': {'description': 'Brief descriptive title for the scenario', 'type': 'string'}, 'persona': {'$ref': '#/$defs/UserPersona'}, 'context': {'description': 'The specific context or situation', 'type': 'string'}, 'initial_question': {'description': 'The first question the user would ask', 'type': 'string'}, 'information_needs': {'description': 'Specific information needs', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['scenario_id', 'title', 'persona', 'context', 'initial_question', 'information_needs'], 'type': 'object'}, 'UserPersona': {'description': 'A user persona for a scenario.', 'properties': {'name': {'anyOf': [{'type': 'string'}, {'type': 'null'}], 'description': 'Name of the persona'}, 'type': {'description': 'Type of user', 'type': 'string'}, 'background': {'description': 'Background of the user', 'type': 'string'}, 'goals': {'description': "User's goals", 'type': 'string'}}, 'required': ['type', 'background', 'goals'], 'type': 'object'}}}}}]}}
+2025-05-20 09:38:25,963 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:25,964 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:25,968 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:25,968 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:25,969 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:25,969 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:29,742 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:29 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'1014'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:29,743 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:29,743 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:29,743 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:29,744 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:29,744 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:29,744 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:29 GMT', 'content-type': 'application/json', 'content-length': '1014', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:29,744 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:29,746 - __main__ - INFO - Generated 1 conversation scenarios
+2025-05-20 09:38:29,746 - __main__ - INFO - Generating multi-round conversations for each scenario
+2025-05-20 09:38:29,746 - __main__ - INFO - Processing scenario: Conversation with AI model
+2025-05-20 09:38:29,746 - __main__ - INFO - Conversation round 1 for scenario 1
+2025-05-20 09:38:29,751 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-73b11d5a-bad8-4032-a6a9-d91960557d08', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at providing helpful, accurate answers based on document content.\n        Your answers should be:\n        \n        1. Directly based on the information in the provided document chunks\n        2. Comprehensive but concise\n        3. Written in a natural, conversational tone\n        4. Factually accurate and properly cited\n        \n        Only use information from the provided document chunks. If the answer cannot be found in the chunks,\n        clearly state that the information is not available in the provided documents.\n        '}, {'role': 'user', 'content': 'What are the latest advancements in AI?'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'retrieve_relevant_chunks', 'description': '<summary>Retrieve chunks that are most relevant to answering the question.</summary>\n<returns>\n<description>List of relevant document chunks</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'question': {'description': 'The question to find relevant chunks for', 'type': 'string'}}, 'required': ['question'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'format_answer', 'description': '<summary>Format and improve the draft answer to make it more conversational and readable.</summary>\n<returns>\n<description>Formatted and improved answer</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'draft_answer': {'description': 'The initial draft answer', 'type': 'string'}}, 'required': ['draft_answer'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'An answer generated for a question.', 'parameters': {'properties': {'question': {'description': 'The original question', 'type': 'string'}, 'answer': {'description': 'The generated answer', 'type': 'string'}, 'source_chunk_ids': {'description': 'IDs of source chunks used', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['question', 'answer', 'source_chunk_ids'], 'type': 'object'}}}]}}
+2025-05-20 09:38:29,752 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:29,753 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:29,754 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:29,755 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:29,755 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:29,756 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:30,869 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:30 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'557'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:30,869 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:30,870 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:30,870 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:30,870 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:30,871 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:30,871 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:30 GMT', 'content-type': 'application/json', 'content-length': '557', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:30,871 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:30,876 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-c9927645-3d51-4f3a-a4cc-3affbbdde8e5', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at providing helpful, accurate answers based on document content.\n        Your answers should be:\n        \n        1. Directly based on the information in the provided document chunks\n        2. Comprehensive but concise\n        3. Written in a natural, conversational tone\n        4. Factually accurate and properly cited\n        \n        Only use information from the provided document chunks. If the answer cannot be found in the chunks,\n        clearly state that the information is not available in the provided documents.\n        '}, {'role': 'user', 'content': 'What are the latest advancements in AI?'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_DrcmZcSbuEMISiwxFOmvxMKu', 'type': 'function', 'function': {'name': 'retrieve_relevant_chunks', 'arguments': '{"question": "latest advancements in AI"}'}}]}, {'role': 'tool', 'tool_call_id': 'call_DrcmZcSbuEMISiwxFOmvxMKu', 'content': '[{"chunk_id":"chunk1","content":"# Artificial Intelligence in Healthcare: A Comprehensive Overview\\n\\n## Introduction\\n\\nArtificial Intelligence (AI) is revolutionizing healthcare delivery across the globe. From diagnostic assistance to personalized treatment plans, AI technologies are enhancing clinical decision-making and improving patient outcomes. This document explores the current applications, challenges, and future directions of AI in healthcare.\\n\\n## Current Applications\\n\\n### Diagnostic Imaging","document_title":"sample_document.txt"},{"chunk_id":"chunk2","content":".\\n\\n## Current Applications\\n\\n### Diagnostic Imaging\\nAI algorithms have demonstrated remarkable accuracy in analyzing medical images. Deep learning models can detect abnormalities in X-rays, MRIs, and CT scans, often matching or exceeding the performance of experienced radiologists. For example, AI systems can identify early signs of lung cancer in chest X-rays with over 90% accuracy, potentially saving thousands of lives through early detection.","document_title":"sample_document.txt"},{"chunk_id":"chunk3","content":"saving thousands of lives through early detection.\\nThe FDA has approved several AI-based diagnostic tools since 2018, including IDx-DR for diabetic retinopathy detection and Viz.AI for stroke detection. These tools are now being integrated into clinical workflows across major healthcare institutions.\\n\\n### Clinical Decision Support","document_title":"sample_document.txt"},{"chunk_id":"chunk4","content":"hcare institutions.\\n\\n### Clinical Decision Support\\nAI-powered clinical decision support systems analyze patient data to provide treatment recommendations and risk assessments. These systems can process vast amounts of medical literature, clinical guidelines, and patient records to suggest evidence-based interventions.","document_title":"sample_document.txt"},{"chunk_id":"chunk5","content":"t records to suggest evidence-based interventions.\\nFor instance, IBM Watson for Oncology analyzes patient medical information against a vast database of medical literature to recommend treatment options for cancer patients. While early implementations faced challenges, newer versions have shown promising results in aligning with expert recommendations.\\n\\n### Predictive Analytics","document_title":"sample_document.txt"}]'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'retrieve_relevant_chunks', 'description': '<summary>Retrieve chunks that are most relevant to answering the question.</summary>\n<returns>\n<description>List of relevant document chunks</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'question': {'description': 'The question to find relevant chunks for', 'type': 'string'}}, 'required': ['question'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'format_answer', 'description': '<summary>Format and improve the draft answer to make it more conversational and readable.</summary>\n<returns>\n<description>Formatted and improved answer</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'draft_answer': {'description': 'The initial draft answer', 'type': 'string'}}, 'required': ['draft_answer'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'An answer generated for a question.', 'parameters': {'properties': {'question': {'description': 'The original question', 'type': 'string'}, 'answer': {'description': 'The generated answer', 'type': 'string'}, 'source_chunk_ids': {'description': 'IDs of source chunks used', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['question', 'answer', 'source_chunk_ids'], 'type': 'object'}}}]}}
+2025-05-20 09:38:30,877 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:30,878 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:30,879 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:30,879 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:30,880 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:30,880 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:33,634 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:33 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'1009'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:33,635 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:33,635 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:33,636 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:33,636 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:33,636 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:33,637 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:33 GMT', 'content-type': 'application/json', 'content-length': '1009', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:33,637 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:33,643 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-6e719de7-9cbc-443b-b965-1d6c8d85fd70', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are an expert at providing helpful, accurate answers based on document content.\n        Your answers should be:\n        \n        1. Directly based on the information in the provided document chunks\n        2. Comprehensive but concise\n        3. Written in a natural, conversational tone\n        4. Factually accurate and properly cited\n        \n        Only use information from the provided document chunks. If the answer cannot be found in the chunks,\n        clearly state that the information is not available in the provided documents.\n        '}, {'role': 'user', 'content': 'What are the latest advancements in AI?'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_DrcmZcSbuEMISiwxFOmvxMKu', 'type': 'function', 'function': {'name': 'retrieve_relevant_chunks', 'arguments': '{"question": "latest advancements in AI"}'}}]}, {'role': 'tool', 'tool_call_id': 'call_DrcmZcSbuEMISiwxFOmvxMKu', 'content': '[{"chunk_id":"chunk1","content":"# Artificial Intelligence in Healthcare: A Comprehensive Overview\\n\\n## Introduction\\n\\nArtificial Intelligence (AI) is revolutionizing healthcare delivery across the globe. From diagnostic assistance to personalized treatment plans, AI technologies are enhancing clinical decision-making and improving patient outcomes. This document explores the current applications, challenges, and future directions of AI in healthcare.\\n\\n## Current Applications\\n\\n### Diagnostic Imaging","document_title":"sample_document.txt"},{"chunk_id":"chunk2","content":".\\n\\n## Current Applications\\n\\n### Diagnostic Imaging\\nAI algorithms have demonstrated remarkable accuracy in analyzing medical images. Deep learning models can detect abnormalities in X-rays, MRIs, and CT scans, often matching or exceeding the performance of experienced radiologists. For example, AI systems can identify early signs of lung cancer in chest X-rays with over 90% accuracy, potentially saving thousands of lives through early detection.","document_title":"sample_document.txt"},{"chunk_id":"chunk3","content":"saving thousands of lives through early detection.\\nThe FDA has approved several AI-based diagnostic tools since 2018, including IDx-DR for diabetic retinopathy detection and Viz.AI for stroke detection. These tools are now being integrated into clinical workflows across major healthcare institutions.\\n\\n### Clinical Decision Support","document_title":"sample_document.txt"},{"chunk_id":"chunk4","content":"hcare institutions.\\n\\n### Clinical Decision Support\\nAI-powered clinical decision support systems analyze patient data to provide treatment recommendations and risk assessments. These systems can process vast amounts of medical literature, clinical guidelines, and patient records to suggest evidence-based interventions.","document_title":"sample_document.txt"},{"chunk_id":"chunk5","content":"t records to suggest evidence-based interventions.\\nFor instance, IBM Watson for Oncology analyzes patient medical information against a vast database of medical literature to recommend treatment options for cancer patients. While early implementations faced challenges, newer versions have shown promising results in aligning with expert recommendations.\\n\\n### Predictive Analytics","document_title":"sample_document.txt"}]'}, {'role': 'assistant', 'tool_calls': [{'id': 'call_M1tuLTofHg5VP8UxlVudjc2E', 'type': 'function', 'function': {'name': 'format_answer', 'arguments': '{"draft_answer": "The latest advancements in AI include its applications in healthcare, such as diagnostic imaging, clinical decision support, and predictive analytics. AI algorithms have demonstrated remarkable accuracy in analyzing medical images, detecting abnormalities, and identifying early signs of diseases like lung cancer. Additionally, AI-powered clinical decision support systems can provide treatment recommendations and risk assessments by analyzing patient data and medical literature."}'}}]}, {'role': 'tool', 'tool_call_id': 'call_M1tuLTofHg5VP8UxlVudjc2E', 'content': 'From what I can see, The latest advancements in AI include its applications in healthcare, such as diagnostic imaging, clinical decision support, and predictive analytics. AI algorithms have demonstrated remarkable accuracy in analyzing medical images, detecting abnormalities, and identifying early signs of diseases like lung cancer. Additionally, AI-powered clinical decision support systems can provide treatment recommendations and risk assessments by analyzing patient data and medical literature.'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'retrieve_relevant_chunks', 'description': '<summary>Retrieve chunks that are most relevant to answering the question.</summary>\n<returns>\n<description>List of relevant document chunks</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'question': {'description': 'The question to find relevant chunks for', 'type': 'string'}}, 'required': ['question'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'format_answer', 'description': '<summary>Format and improve the draft answer to make it more conversational and readable.</summary>\n<returns>\n<description>Formatted and improved answer</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'draft_answer': {'description': 'The initial draft answer', 'type': 'string'}}, 'required': ['draft_answer'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'An answer generated for a question.', 'parameters': {'properties': {'question': {'description': 'The original question', 'type': 'string'}, 'answer': {'description': 'The generated answer', 'type': 'string'}, 'source_chunk_ids': {'description': 'IDs of source chunks used', 'items': {'type': 'string'}, 'type': 'array'}}, 'required': ['question', 'answer', 'source_chunk_ids'], 'type': 'object'}}}]}}
+2025-05-20 09:38:33,644 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:33,645 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:33,646 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:33,646 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:33,647 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:33,647 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:36,501 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:36 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'802'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:36,501 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:36,502 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:36,502 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:36,502 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:36,502 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:36,503 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:36 GMT', 'content-type': 'application/json', 'content-length': '802', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:36,503 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:36,509 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'User-Agent': 'pydantic-ai/0.2.4'}, 'files': None, 'idempotency_key': 'stainless-python-retry-e64513e7-c946-41f8-a57d-9148c95b60dc', 'json_data': {'messages': [{'role': 'system', 'content': '\n        You are a quality control expert evaluating answers to questions.\n        Assess the conversation for:\n        \n        1. Factual accuracy: Does the answer contain information that is consistent with the provided document chunks?\n        2. Relevance: Is the answer directly addressing the question asked?\n        3. Natural conversational flow: Does the conversation sound natural and human-like?\n        \n        Provide detailed feedback and scores for each criterion, as well as an overall assessment.\n        '}, {'role': 'user', 'content': 'Evaluate this Q&A pair: Question: What are the latest advancements in AI? Answer: The latest advancements in AI include its applications in healthcare, such as diagnostic imaging, clinical decision support, and predictive analytics.'}], 'model': 'meta-llama/Llama-3.3-70B-Instruct-Turbo', 'n': 1, 'stream': False, 'tool_choice': 'required', 'tools': [{'type': 'function', 'function': {'name': 'verify_factual_statement', 'description': '<summary>Verify if a statement from the answer is supported by the source chunks.</summary>\n<returns>\n<description>Verification result with score and explanation</description>\n</returns>', 'parameters': {'additionalProperties': False, 'properties': {'statement': {'description': 'The statement to verify', 'type': 'string'}}, 'required': ['statement'], 'type': 'object'}, 'strict': True}}, {'type': 'function', 'function': {'name': 'final_result', 'description': 'Evaluation result from quality controller.', 'parameters': {'properties': {'factual_accuracy': {'description': 'Score for factual accuracy', 'maximum': 1, 'minimum': 0, 'type': 'number'}, 'factual_accuracy_feedback': {'description': 'Feedback on factual accuracy', 'type': 'string'}, 'relevance': {'description': 'Score for relevance', 'maximum': 1, 'minimum': 0, 'type': 'number'}, 'relevance_feedback': {'description': 'Feedback on relevance', 'type': 'string'}, 'naturalness': {'description': 'Score for naturalness', 'maximum': 1, 'minimum': 0, 'type': 'number'}, 'naturalness_feedback': {'description': 'Feedback on naturalness', 'type': 'string'}, 'overall_score': {'description': 'Overall quality score', 'maximum': 1, 'minimum': 0, 'type': 'number'}, 'overall_feedback': {'description': 'Overall feedback', 'type': 'string'}, 'passed': {'description': 'Whether the answer passes quality control', 'type': 'boolean'}}, 'required': ['factual_accuracy', 'factual_accuracy_feedback', 'relevance', 'relevance_feedback', 'naturalness', 'naturalness_feedback', 'overall_score', 'overall_feedback', 'passed'], 'type': 'object'}}}]}}
+2025-05-20 09:38:36,510 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions
+2025-05-20 09:38:36,511 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:36,512 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-20 09:38:36,512 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-20 09:38:36,513 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-20 09:38:36,513 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-20 09:38:42,850 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 20 May 2025 04:08:42 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'1438'), (b'Connection', b'keep-alive'), (b'server', b'uvicorn'), (b'x-robots-tag', b'noindex')])
+2025-05-20 09:38:42,851 - httpx - INFO - HTTP Request: POST https://api.deepinfra.com/v1/openai/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 09:38:42,851 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-20 09:38:42,852 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-20 09:38:42,852 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-20 09:38:42,852 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-20 09:38:42,853 - openai._base_client - DEBUG - HTTP Response: POST https://api.deepinfra.com/v1/openai/chat/completions "200 OK" Headers({'date': 'Tue, 20 May 2025 04:08:42 GMT', 'content-type': 'application/json', 'content-length': '1438', 'connection': 'keep-alive', 'server': 'uvicorn', 'x-robots-tag': 'noindex'})
+2025-05-20 09:38:42,853 - openai._base_client - DEBUG - request_id: None
+2025-05-20 09:38:42,855 - __main__ - INFO - Generated 1 multi-round conversations
+2025-05-20 09:38:42,856 - __main__ - INFO - Full results saved to results/conversation_results_20250520_093820.json
+2025-05-20 09:38:42,856 - __main__ - INFO - Simplified conversations saved to results/simplified_conversations_20250520_093820.json
+2025-05-20 09:38:42,856 - __main__ - INFO - Total tokens: 10052
+2025-05-20 09:38:42,857 - __main__ - INFO - request_tokens: 9467
+2025-05-20 09:38:42,857 - __main__ - INFO - requests: 8
+2025-05-20 09:38:42,857 - __main__ - INFO - response_tokens: 585

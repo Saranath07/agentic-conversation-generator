@@ -1,0 +1,27 @@
+{
+  "scenario": {
+    "scenario_id": 1,
+    "title": "Artificial Intelligence in Healthcare",
+    "persona": {
+      "name": "User 1",
+      "type": "Clinical Data Analyst",
+      "background": "5 years experience in healthcare data analysis with a strong understanding of AI and machine learning principles",
+      "goals": "Develop and implement predictive models to improve patient outcomes, enhance clinical decision support systems, and ensure data privacy and security in healthcare institutions"
+    },
+    "context": "A comprehensive overview of AI applications in healthcare, including diagnostic imaging and personalized treatment plans",
+    "initial_question": "How is AI being used to improve patient outcomes in healthcare?",
+    "information_needs": [
+      "Current applications of AI in healthcare",
+      "Challenges and limitations of AI in healthcare",
+      "Future directions for AI in healthcare",
+      "Data privacy and security considerations"
+    ]
+  },
+  "initial_question": "How is AI being used to improve patient outcomes in healthcare?",
+  "answer": "AI is being used to improve patient outcomes in healthcare through various applications, including diagnostic imaging and clinical decision support. For example, AI algorithms can detect abnormalities in medical images with high accuracy, and AI-based diagnostic tools have been approved by the FDA for use in clinical workflows.",
+  "source_chunks": [
+    "chunk1",
+    "chunk2",
+    "chunk3"
+  ]
+}

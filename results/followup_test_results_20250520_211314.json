@@ -1,0 +1,34 @@
+{
+  "scenario": {
+    "scenario_id": 1,
+    "title": "Artificial Intelligence in Healthcare",
+    "persona": {
+      "name": "User 1",
+      "type": "Clinical Data Analyst",
+      "background": "5 years experience in healthcare data analysis and privacy compliance",
+      "goals": "Develop and implement AI-driven predictive models for patient outcomes while ensuring data privacy and security"
+    },
+    "context": "The use of Artificial Intelligence in healthcare is becoming increasingly prevalent, with applications in diagnostic imaging and personalized treatment plans",
+    "initial_question": "What are the current applications and future directions of AI in healthcare?",
+    "information_needs": [
+      "Current applications of AI in healthcare",
+      "Future directions of AI in healthcare",
+      "Challenges of implementing AI in healthcare",
+      "Data privacy and security considerations"
+    ]
+  },
+  "initial_question": "What are the current applications and future directions of AI in healthcare?",
+  "answer": "The current applications of AI in healthcare include diagnostic imaging, where AI algorithms can analyze medical images with high accuracy, and clinical decision support, where AI systems can assist in personalized treatment plans. The future directions of AI in healthcare involve further integration of AI-based diagnostic tools into clinical workflows and exploration of new applications such as personalized medicine and patient engagement.",
+  "source_chunks": [
+    "chunk1",
+    "chunk2",
+    "chunk3"
+  ],
+  "follow_up_question": "What else would you like to know?",
+  "follow_up_reasoning": "An error occurred while generating the question: Expected code to be unreachable, but got: UserPromptPart(content='Generate a follow-up question based on the conversation history and document...",
+  "follow_up_sources": [
+    "chunk1",
+    "chunk2",
+    "chunk3"
+  ]
+}
